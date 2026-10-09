@@ -1,4 +1,3 @@
-```html
 <!doctype html>
 <html lang="ru">
 <head>
@@ -13,8 +12,12 @@
 --text:#f5f5f7;
 --muted:#85858d;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
 body{
 margin:0;
 background:
@@ -48,41 +51,23 @@ border-bottom:1px solid #151518;
 height:70px;
 display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:center;
 }
 .logo{
 font-weight:900;
 letter-spacing:.22em;
 font-size:19px;
 }
-nav{
-display:flex;
-gap:26px;
-}
-nav a{
-color:#85858d;
-text-decoration:none;
-font-size:12px;
-transition:.2s;
-}
-nav a:hover{
-color:#fff;
-}
 .hero{
 text-align:center;
-padding:90px 0 60px;
-}
-.eyebrow{
-font-size:10px;
-letter-spacing:.28em;
-color:#666;
-text-transform:uppercase;
+padding:110px 0 55px;
 }
 h1{
-font-size:clamp(44px,8vw,78px);
-line-height:.92;
-letter-spacing:-.06em;
-margin:15px 0 22px;
+font-size:clamp(42px,7vw,78px);
+line-height:1;
+letter-spacing:-.055em;
+margin:0 0 24px;
+white-space:nowrap;
 }
 .hero p{
 max-width:650px;
@@ -243,11 +228,12 @@ font-size:10px;
 letter-spacing:.08em;
 }
 @media(max-width:550px){
-nav{
-display:none;
-}
 .hero{
-padding-top:60px;
+padding-top:70px;
+}
+h1{
+font-size:clamp(32px,9vw,50px);
+white-space:normal;
 }
 .container{
 width:min(100% - 20px,1120px);
@@ -264,12 +250,6 @@ grid-template-columns:1fr;
 <header>
 <div class="container nav">
 <div class="logo">USURE</div>
-
-<nav>
-<a href="#store">Магазин</a>
-<a href="#product">Forsaken Script</a>
-</nav>
-
 </div>
 </header>
 
@@ -277,13 +257,10 @@ grid-template-columns:1fr;
 
 <section class="hero container">
 
-<div class="eyebrow">USURE / SCRIPTS & PROGRAMS</div>
-
-<h1>USURE<br>MALWARE.</h1>
+<h1>Usure Malware</h1>
 
 <p>
-Forsaken Script — цифровой продукт USURE.
-Выберите товар и перейдите к покупке.
+Forsaken Script — цифровой продукт USURE
 </p>
 
 </section>
@@ -291,7 +268,7 @@ Forsaken Script — цифровой продукт USURE.
 <section id="store" class="section container">
 
 <div class="title">
-<h2>Scripts & Programs</h2>
+<h2>Forsaken Script</h2>
 <span>1 PRODUCT</span>
 </div>
 
@@ -344,21 +321,16 @@ Forsaken Script — цифровой продукт USURE.
 </main>
 
 <footer>
-USURE — SCRIPTS & PROGRAMS
+USURE — FORSAKEN SCRIPT — 200 ₽
 </footer>
 
 <script>
 const FORSAKEN_URL="https://funpay.com/lots/offer?id=79095159";
 
 document.getElementById("forsakenBuy").onclick=()=>{
-window.open(
-FORSAKEN_URL,
-"_blank",
-"noopener,noreferrer"
-);
+window.open(FORSAKEN_URL,"_blank","noopener,noreferrer");
 };
 </script>
 
 </body>
 </html>
-```
